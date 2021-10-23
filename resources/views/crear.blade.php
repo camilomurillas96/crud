@@ -1,3 +1,4 @@
+
 @extends('plantilla.Pcrear')
 
 @section('Titulo', 'Crea tu Producto')
@@ -5,15 +6,36 @@
 <header>
     <nav>
         <ul>
+            <li><a href="{{route('crud')}}">Inicio</a></li>
             <li><a href="">Crear Producto</a></li>
             <li><a href="">Productos</a></li>
         </ul>        
     </nav>
    
 </header>
-    <form action="" method="post">
-        @csrf
-        @method('put')
-        <label for="">Hola aqui empezaras a crear el formulario de los productos</label>
-    </form>
+    <div class="contenedor">
+        <form action="" method="post">
+            <h1>Ingrese el producto</h1>
+            <hr>
+            <br><br>
+            @csrf
+            @method('put')
+            <label for="">Nombre del producto:
+                <br>
+                <input type="text" name="name">
+            </label>
+            <br><br>
+            <label for="">Tipo de producto:
+                <br>
+                <input type="text" name="tipo">
+            </label>
+            <br><br>
+            <label for="">Descripcion del producto:
+                <br>
+                <input type="text" name="descripcion">
+            </label>
+            <br><br>
+            <button type="submit">Crear el producto</button>
+        </form>
+    </div>
 @endsection

@@ -2,12 +2,14 @@
     padding: 0px;
     margin:0px;
     font-family: 'Times New Roman', Times, serif;
+    
 }
 
 header{
     width: 100%;
-    background: rgb(233, 135, 23);
+    background: #69B1B8 !important;
     height: 700px;
+    
 }
 
 nav{
