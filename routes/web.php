@@ -14,4 +14,8 @@ use App\Http\Controllers\crud;
 */
 
 Route::get('/', [crud::class, 'index'])->name('crud');
-route::get('/creacion', [crud::class, 'producto'])->name('producto');
+route::get('/creacion', [crud::class, 'create'])->name('producto');
+route::put('/creacion}', [crud::class, 'store'])->name('producto.store');
+
+route::get('mostrar', [crud::class, 'mostrar'])->name('mostrar');
+route::get('mostrar/d', [crud::class, 'unico'])->name('unico');

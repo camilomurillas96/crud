@@ -1,20 +1,14 @@
 
 @extends('plantilla.Pcrear')
+@extends('plantilla.header')
 
 @section('Titulo', 'Crea tu Producto')
 @section('Contenido')
-<header>
-    <nav>
-        <ul>
-            <li><a href="{{route('crud')}}">Inicio</a></li>
-            <li><a href="">Crear Producto</a></li>
-            <li><a href="">Productos</a></li>
-        </ul>        
-    </nav>
-   
+<header>    
+   @section('header')
 </header>
     <div class="contenedor">
-        <form action="" method="post">
+        <form action="{{route('producto.store')}}" method="post">
             <h1>Ingrese el producto</h1>
             <hr>
             <br><br>

@@ -23,7 +23,6 @@ ul{
 li{
     display: inline-block;
     margin: 30px;
-    border-left: rgb(92, 27, 4) 2px solid;
 }
 a{
     text-decoration: none;

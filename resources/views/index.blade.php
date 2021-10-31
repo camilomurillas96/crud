@@ -1,15 +1,11 @@
 @extends('plantilla.Pindex')
+@extends('plantilla.header')
 
 @section('Titulo')
 @section('Contenido')
 <header>
-    <nav>
-        <ul>
-            <li><a href="{{route('producto')}}">Crear Producto</a></li>
-            <li><a href="">Productos</a></li>
-        </ul>  
-            
-    </nav>
+    @section('header')       
+    
     <h1>Bienvenido a la pagina principal</h1>
 </header>
     
