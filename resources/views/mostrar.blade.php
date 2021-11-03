@@ -12,7 +12,7 @@
         <hr>
         <ul class="produc">
             @foreach ($productos as $producto)
-                <li><a href="{{ route('unico') }}">{{ $producto->name }}</a></li>
+                <li><a href="{{ route('unico', $producto->id) }}">{{ $producto->name }}</a></li>
                 
             @endforeach
         </ul>

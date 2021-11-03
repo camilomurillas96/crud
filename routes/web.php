@@ -18,4 +18,4 @@ route::get('/creacion', [crud::class, 'create'])->name('producto');
 route::put('/creacion}', [crud::class, 'store'])->name('producto.store');
 
 route::get('mostrar', [crud::class, 'mostrar'])->name('mostrar');
-route::get('mostrar/d', [crud::class, 'unico'])->name('unico');
+route::get('mostrar/{id}', [crud::class, 'unico'])->name('unico');
